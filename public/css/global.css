@@ -1,0 +1,41 @@
+:root {
+  --chocolate: #4A2E1D;
+  --caramelo: #B67A45;
+  --creme: #F5EDE3;
+  --rosa-neon: #FF6FB5;
+  --rosa-pastel: #F8BBD0;
+  --amarelo-doce: #E4B94D;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--creme);
+    color: #4A2E1D;
+}
+
+.navbar {
+    background-color: var(--chocolate);
+    box-shadow: 5px 1px 1px 1px rgba(0, 0,0, 0.129);
+
+    .text-caramelo {
+        color: var(--caramelo);
+    }
+
+    .nav-link {
+        color: var(--creme);
+        font-size: 1.2rem;
+        transition: all .3s;
+        &:hover {
+            color: var(--caramelo);
+        }
+    }
+    position: sticky;
+    @media (max-width: 850px) {
+        .navbar-brand {
+            h4 {
+                font-size: 0.95rem;
+            }
+        }
+    }
+}
