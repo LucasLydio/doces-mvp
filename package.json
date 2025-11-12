@@ -1,0 +1,17 @@
+{
+  "name": "donana",
+  "version": "1.0.0",
+  "description": "Uma landing page e sistema de agendamentos estático para a Valette Barbearia, usando HTML, CSS, JS + Bootstrap e Netlify Functions para armazenar dados em JSON.",
+  "main": "apiClient.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/rest": "^22.0.0",
+    "@supabase/supabase-js": "^2.75.0",
+    "dotenv": "^17.2.3"
+  }
+}
