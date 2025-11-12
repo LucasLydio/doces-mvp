@@ -59,6 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const product = JSON.parse(this.getAttribute('data-product'));
         if (window.addToCart) {
           window.addToCart(product);
+          updateCartBadge();
         } else {
           document.dispatchEvent(new CustomEvent('add-to-cart', { detail: product }));
         }
