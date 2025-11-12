@@ -115,6 +115,7 @@
                 border: 1px solid var(--chocolate);
                 padding: .2rem .9rem;
                 outline: none;
+                max-width: 220px;
             }
         }
         .filter {
