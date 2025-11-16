@@ -120,7 +120,7 @@ html += cart.map(p => `
 
  
   const subtotal = cart.reduce((sum, p) => sum + (p.price * p.qty), 0);
-  const delivery = cart.length ? 8.90 : 0; 
+  const delivery = cart.length ? 3.50 : 0; 
   const total = subtotal + delivery;
   summarySubtotal && (summarySubtotal.textContent = `R$ ${subtotal.toLocaleString('pt-BR', {minimumFractionDigits:2})}`);
   summaryDelivery && (summaryDelivery.textContent = `R$ ${delivery.toLocaleString('pt-BR', {minimumFractionDigits:2})}`);
